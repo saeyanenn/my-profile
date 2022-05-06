@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald" />
+    <title>伊藤冴のプロフィール</title>
+    <meta name="description" content="伊藤冴のプロフィール" />
     <meta name="author" content="SitePoint" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/b978b35515.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -21,186 +22,212 @@
 
   <body>
     <!--見出し、自己紹介-->
-    <header>
-      <div class="header-center">
-        <i class="icon1 fa-solid fa-otter"></i>
-      </div>
-    </header>
+    <div class="container">
+      <header>
+        <span id="last-commit-date"> </span>
+        <div class="header-center">
+          <i class="icon1 fa-solid fa-otter"></i>
+        </div>
+      </header>
 
-    <div class="main-profile">
-      <div class="a">
-        <h1>伊藤 冴</h1>
-        <p>
-          愛知県名古屋市育ち、浜松市中区在住の静岡大学　工学部　電気電子工学科の一年生<br />
-          電気電子工学、電気電子情報学、論理回路について学習しています。<br />
-          めんどくさがりな性格ですが、好きなものには全力で取り組みます。
-        </p>
-      </div>
-    </div>
-
-    <main>
-      <div class="contents-tytle">
-        <h1>MY FAVORITE</h1>
+      <div class="main-profile">
+        <div class="profile-wrapper">
+          <h1>伊藤 冴</h1>
+          <p>
+            愛知県名古屋市育ち、浜松市中区在住の静岡大学　工学部　電気電子工学科の一年生<br />
+            電気電子工学、電気電子情報学、論理回路について学習しています。<br />
+            めんどくさがりな性格ですが、好きなものには全力で取り組みます。
+          </p>
+        </div>
       </div>
 
-      <!--ここからが内容（趣味等について書く）-->
-
-      <div class="contents">
-        <div class="contents-box">
-          <div class="contents-flame front">
-            <div class="icon">
-              <i class="fa fa-solid fa-basketball"></i>
-            </div>
-            <div>
-              <h5>SPORT</h5>
-            </div>
-          </div>
-          <div class="contents-flame back">
-            <div class="icon">
-              <i class="fa fa-solid fa-basketball"></i>
-            </div>
-            <h2>バスケットボール</h2>
-            <p>
-              小学生の頃から高校生までずっとやってきました。<br />
-              あまり才能があるとは言えませんでしたが、<br />
-              楽しさと悔しさを糧に続けてきました。
-            </p>
-          </div>
+      <main>
+        <div class="contents-tytle">
+          <h1>MY FAVORITE</h1>
         </div>
 
-        </div>
+        <!--ここからが内容（趣味等について書く）-->
 
-        <div class="contents-box">
-          <div class="contents-flame">
-            <div class="interesting">
+        <div class="contents">
+          <!-- 1 -->
+          <div class="contents-box">
+            <div class="contents-flame front">
+              <div class="icon">
+                <i class="fa fa-solid fa-basketball"></i>
+              </div>
+              <div>
+                <p class="small-content-topic">SPORT</p>
+              </div>
+            </div>
+
+            <div class="contents-flame back">
+              <p class="small-content-tytle">バスケットボール</p>
+              <p class="content-detail">
+                小学生の頃から高校生までずっとやってきました。<br />
+                あまり才能があるとは言えませんでしたが、
+                楽しさと悔しさを糧に続けてきました。<br />
+              </p>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="contents-box">
+            <div class="contents-flame front">
               <div class="icon">
                 <i class="fa fa-solid fa-computer"></i>
               </div>
-              <h5>DESKTOP</h5>
-              <h2>プログラミング</h2>
-              <p>
-                高校生のことから興味があり、<br />
-                大学生になってから本格的に学習を始めました。
-              </p>
-              <p>
-                大学ではプログラミングサークルに入り、<br />
+              <div>
+                <p class="small-content-topic">DESKTOP</p>
+              </div>
+            </div>
+
+            <div class="contents-flame back">
+              <p class="small-content-tytle">プログラミング</p>
+              <p class="content-detail">
+                高校生のことから興味があり、
+                大学生になってから本格的に学習を始めました。<br />
+                大学ではプログラミングサークルに入り、
                 より技術を磨いていきます。
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="contents-box">
-          <div class="contents-flame">
-            <div class="like">
+          <!-- 3 -->
+          <div class="contents-box">
+            <div class="contents-flame front">
               <div class="icon">
                 <i class="fa fa-solid fa-dog"></i>
               </div>
-              <h5>ANIMAL</h5>
-              <h2>犬</h2>
-              <p>
-                小さい頃から動物と触れ合うことが好きで、<br />
-                今は寮生活でペットは飼えないですが、いつか飼ってみたいです。
-              </p>
-              <p>
-                シベリアンハスキーの毛並みと顔が好きで、モフモフしたいです。
+              <div>
+                <p class="small-content-topic">ANIMAL</p>
+              </div>
+            </div>
+
+            <div class="contents-flame back">
+              <p class="small-content-tytle">犬</p>
+              <p class="content-detail">
+                小さい頃から動物と触れ合うことが好きで、
+                今は寮生活でペットは飼えないですが、いつか飼ってみたいです。<br />
+                シベリアンハスキーの毛並みと顔が好きで、モフモフしたいです。<br />
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="contents-box">
-          <div class="contents-flame">
-            <div class="interesting">
+          <!-- 4 -->
+          <div class="contents-box">
+            <div class="contents-flame front">
               <div class="icon">
                 <i class="fa fa-solid fa-burger"></i>
               </div>
-              <h5>FOOD</h5>
-              <h2>アボカド</h2>
-              <p>
-                アボカドは栄養豊富で彩りもいいし、<br />
+              <div>
+                <p class="small-content-topic">FOOD</p>
+              </div>
+            </div>
+
+            <div class="contents-flame back">
+              <p class="small-content-tytle">アボカド</p>
+              <p class="content-detail">
+                アボカドは栄養豊富で彩りもいいし、
                 ご飯と一緒に食べても美味しいのでおすすめです！<br />
-                今は世界的にも人気があり、供給が需要に追いついておらず、<br />
+                今は世界的にも人気があり、供給が需要に追いついておらず、
                 価格が高騰していて、あまり食べれていません。
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="contents-box">
-          <div class="contents-flame">
-            <div class="interesting">
+          <!-- 5 -->
+          <div class="contents-box">
+            <div class="contents-flame front">
               <div class="icon">
                 <i class="fa fa-solid fa-compact-disc"></i>
               </div>
-              <h5>ARTIST</h5>
-              <h2>ヨルシカ</h2>
-              <p>
-                n-bunaさんの心に響く歌詞や曲調と、<br />
+              <div>
+                <p class="small-content-topic">ARTIST</p>
+              </div>
+            </div>
+
+            <div class="contents-flame back">
+              <p class="small-content-tytle">ヨルシカ</p>
+              <p class="content-detail">
+                n-bunaさんの心に響く歌詞や曲調と、
                 suisさんの透き通った歌声が大好きです。<br />
                 いつかライブに行ってみたいです。<br />
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="contents-box">
-          <div class="contents-flame">
-            <div class="interesting">
+          <!-- 6 -->
+          <div class="contents-box">
+            <div class="contents-flame front">
               <div class="icon">
                 <i class="fa fa-solid fa-robot"></i>
               </div>
-              <h5>ANIMATION</h5>
-              <h2>EVANGERION</h2>
-              <p>
-                庵野監督の精神描写とキャラクターの個性、<br />
+              <div>
+                <p class="small-content-topic">ANIMATION</p>
+              </div>
+            </div>
+
+            <div class="contents-flame back">
+              <p class="small-content-tytle">EVANGERION</p>
+              <p class="content-detail">
+                庵野監督の精神描写とキャラクターの個性、
                 世界観やハッと気付かされる伏線が大好きです。<br />
-                旧アニメ版、漫画版、新劇場版それぞれに違いがあり、<br />
+                旧アニメ版、漫画版、新劇場版それぞれに違いがあり、
                 個人的には新劇場版のQが一番好きです。
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="contents-box">
-          <div class="contents-flame">
-            <div class="interesting">
+          <!-- 7 -->
+          <div class="contents-box">
+            <div class="contents-flame front">
               <div class="icon">
                 <i class="fa fa-solid fa-book-open"></i>
               </div>
-              <h5>SUBJECT</h5>
-              <h2>英語</h2>
-              <p>
-                英語自体は得意とは言えず、最初は嫌いだったのですが、<br />
+              <div>
+                <p class="small-content-topic">SUBJECT</p>
+              </div>
+            </div>
+
+            <div class="contents-flame back">
+              <p class="small-content-tytle">英語</p>
+              <p class="content-detail">
+                英語自体は得意とは言えず、最初は嫌いだったのですが、
                 学べば学ぶほど上達する感覚があり、楽しくなってきました。<br />
                 ただ、まだネイティブとの会話の経験がないので、まだまだ課題は多いです。<br />
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="contents-box">
-          <div class="contents-flame">
-            <div class="interesting">
+          <!-- 8 -->
+          <div class="contents-box">
+            <div class="contents-flame front">
               <div class="icon">
                 <i class="fa fa-solid fa-landmark"></i>
               </div>
-              <h5>AMUSEMENT PARK</h5>
-              <h2>ディズニーランド</h2>
-              <p>
+              <div>
+                <p class="small-content-topic">AMUSEMENT PARK</p>
+              </div>
+            </div>
+
+            <div class="contents-flame back">
+              <>
+              <p class="small-content-tytle">ディズニーランド</p>
+              <p class="content-detail">
                 小さい頃に何度か連れてってもらって、大好きになりました。<br />
                 乗り物が好きというよりも、世界観が好きで、ずっと歩いていたいです。<br />
                 家族としか行ったことがないので、友達といったり、一人で行ってみたりしたいです。一人で行ってみたりしたいです。<br />
               </p>
             </div>
           </div>
-        </div>
-      </div>
-    </main>
 
-    <footer>
-      <span id="last-commit-date"> </span>
-    </footer>
+          <!-- 終了 -->
+        </div>
+      </main>
+
+      <footer>
+        <div></div>
+      </footer>
+    </div>
   </body>
-  
 </html>
