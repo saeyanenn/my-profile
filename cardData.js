@@ -1,3 +1,7 @@
+function addLink(text, url) {
+  return `<a href="https://${url}" class="content-detail-link" target="_blank">${text}</a>`;
+}
+
 const cardData = [
   {
     icon: "fa-basketball",
@@ -10,7 +14,9 @@ const cardData = [
     icon: "fa-computer",
     frontTitle: "TECH",
     backTitle: "プログラミング",
-    content: `高校生のことから興味があり、大学生になってから本格的に学習を始めました。<br /> 大学では<a href="https://twitter.com/szpp_3776"class="content-detail-link">プログラミングサークル</a>に入り、 より技術を磨いていきます。`,
+    content: `高校生のことから興味があり、大学生になってから本格的に学習を始めました。<br /> 大学では
+    ${addLink("プログラミングサークル", "twitter.com/szpp_3776")}
+    に入り、 より技術を磨いていきます。`,
   },
   {
     icon: "fa-dog",
@@ -40,8 +46,7 @@ const cardData = [
   {
     icon: "fa-compact-disc",
     frontTitle: "ARTIST",
-    backTitle: `<a href="https://yorushika.com/" class="content-title-link"
-        >ヨルシカ</a>`,
+    backTitle: `${addLink("ヨルシカ", "yorushika.com/")}`,
     content: `n-bunaさんの心に響く歌詞や曲調と、
         suisさんの透き通った歌声が大好きです。<br />
         いつかライブに行ってみたいです。<br />`,
