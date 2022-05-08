@@ -84,7 +84,7 @@ main {
 .contents-tytle h1 {
   text-align: center;
 }
-.contents {
+#contents {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
