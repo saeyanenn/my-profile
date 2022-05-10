@@ -1,5 +1,5 @@
-function addLink(text, url) {
-  return `<a href="https://${url}" class="content-detail-link" target="_blank">${text}</a>`;
+function addLink(text, url, className) {
+  return `<a href="https://${url}" class="${className}" target="_blank">${text}</a>`;
 }
 
 const cardData = [
@@ -15,7 +15,11 @@ const cardData = [
     frontTitle: "TECH",
     backTitle: "プログラミング",
     content: `高校生のことから興味があり、大学生になってから本格的に学習を始めました。<br /> 大学では
-    ${addLink("プログラミングサークル", "twitter.com/szpp_3776")}
+    ${addLink(
+      "プログラミングサークル",
+      "twitter.com/szpp_3776",
+      "content-detail-link"
+    )}
     に入り、 より技術を磨いていきます。`,
   },
   {
@@ -46,7 +50,11 @@ const cardData = [
   {
     icon: "fa-compact-disc",
     frontTitle: "ARTIST",
-    backTitle: `${addLink("ヨルシカ", "yorushika.com/")}`,
+    backTitle: `${addLink(
+      "ヨルシカ",
+      "yorushika.com/",
+      "small-content-title"
+    )}`,
     content: `n-bunaさんの心に響く歌詞や曲調と、
         suisさんの透き通った歌声が大好きです。<br />
         いつかライブに行ってみたいです。<br />`,
@@ -54,7 +62,11 @@ const cardData = [
   {
     icon: "fa-robot",
     frontTitle: "ANIMATION",
-    backTitle: "EVANGERION",
+    backTitle: `${addLink(
+      "EVANGELION",
+      "https://www.evangelion.co.jp/",
+      "small-content-title"
+    )}`,
     content: `庵野監督の精神描写とキャラクターの個性、
         世界観やハッと気付かされる伏線が大好きです。<br />
         旧アニメ版、漫画版、新劇場版それぞれに違いがあり、
@@ -63,7 +75,11 @@ const cardData = [
   {
     icon: "fa-landmark",
     frontTitle: "AMUSEMENT PARK",
-    backTitle: "ディズニーランド",
+    backTitle: `${addLink(
+      "ディズニーランド",
+      "https://www.disney.co.jp/",
+      "small-content-title"
+    )}`,
     content: `小さい頃に何度か連れてってもらって、大好きになりました。<br />
         乗り物が好きというよりも、世界観が好きで、ずっと歩いていたいです。<br />
         家族としか行ったことがないので、友達といったり、一人で行ってみたりしたいです。一人で行ってみたりしたいです。<br />`,
