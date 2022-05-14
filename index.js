@@ -16,6 +16,23 @@ function addMarginTopToFooter(times) {
   $("footer").css("margin-top", contentsBoxHeight * times);
 }
 
+function checkSchoolYear() {
+  const today = new Date();
+  const freshman = new Date("2023/4/1");
+  const sophomore = new Date("2024/4/1");
+  const junior = new Date("2025/4/1");
+
+  if (today < freshman) {
+    return (checkSchoolYear = "一");
+  } else if (today < sophomore) {
+    return (checkSchoolYear = "二");
+  } else if (today < junior) {
+    return (checkSchoolYear = "三");
+  } else {
+    return (checkSchoolYear = "四");
+  }
+}
+
 function createCardElement(data) {
   return `
   <div class="contents-box">
@@ -52,4 +69,6 @@ $(function () {
   $(".contents-box").on("click", function () {
     $(this).toggleClass("flipped");
   });
+
+  $("#schoolYear").text(checkSchoolYear());
 });
