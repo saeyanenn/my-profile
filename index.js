@@ -19,7 +19,7 @@ function addMarginTopToFooter(times) {
 function createCardElement(data) {
   return `
   <div class="contents-box">
-    <div class="contents-flame front">
+    <div class="contents-flame front text-align-center">
       <div class="icon">
         <i class="fa fa-solid ${data.icon}"></i>
       </div>
@@ -28,7 +28,7 @@ function createCardElement(data) {
     </div>
   </div>
 
-  <div class="contents-flame back">
+  <div class="contents-flame back text-align-center">
     <p class="small-content-title">${data.backTitle}</p>
     <p class="content-detail">
       ${data.content}

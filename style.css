@@ -37,18 +37,13 @@ header {
   margin: auto;
   height: 70px;
   width: 70px;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .icon1 {
   font-size: 50px;
   line-height: 70px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
 
 .section {
@@ -61,16 +56,8 @@ header {
   padding-top: 70px;
 }
 
-.profile-wrapper {
+.text-align-center {
   text-align: center;
-}
-
-.profile-wrapper h1 {
-  text-align: center;
-}
-
-.profile-wrapper p {
-  font-size: 20px;
 }
 
 main {
@@ -84,9 +71,6 @@ main {
   height: auto;
 }
 
-.contents-title h1 {
-  text-align: center;
-}
 #contents {
   width: 100%;
   display: flex;
@@ -154,14 +138,12 @@ main {
   background-color: rgb(225, 231, 253);
   margin: auto;
   color: rgb(35, 105, 167);
+  display: flex;
+  align-items: center;
 }
 
 .fa {
   font-size: 50px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .small-content-topic {
@@ -172,11 +154,6 @@ main {
   font-size: 30px;
   color: #5ab5b2;
   padding: 0;
-}
-
-.contents-flame p {
-  text-align: center;
-  line-height: 1.5;
 }
 
 .content-detail {
