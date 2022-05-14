@@ -64,7 +64,7 @@ const cardData = [
     frontTitle: "ANIMATION",
     backTitle: `${wrapTextWithLink(
       "EVANGELION",
-      "https://www.evangelion.co.jp/",
+      "www.evangelion.co.jp/",
       "small-content-title"
     )}`,
     content: `庵野監督の精神描写とキャラクターの個性、
@@ -77,7 +77,7 @@ const cardData = [
     frontTitle: "AMUSEMENT PARK",
     backTitle: `${wrapTextWithLink(
       "ディズニーランド",
-      "https://www.disney.co.jp/",
+      "www.disney.co.jp/",
       "small-content-title"
     )}`,
     content: `小さい頃に何度か連れてってもらって、大好きになりました。<br />
