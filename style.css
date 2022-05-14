@@ -159,6 +159,10 @@ footer {
   align-items: center;
 }
 
+#last-commit-date {
+  color: rgb(252, 253, 252) !important;
+  text-decoration: none;
+}
 @media (max-width: 1000px) {
   .contents-box {
     width: 50%;
