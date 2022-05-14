@@ -1,4 +1,4 @@
-function addLink(text, url, className) {
+function wrapTextWithLink(text, url, className) {
   return `<a href="https://${url}" class="${className}" target="_blank">${text}</a>`;
 }
 
@@ -15,7 +15,7 @@ const cardData = [
     frontTitle: "TECH",
     backTitle: "プログラミング",
     content: `高校生のことから興味があり、大学生になってから本格的に学習を始めました。<br /> 大学では
-    ${addLink(
+    ${wrapTextWithLink(
       "プログラミングサークル",
       "twitter.com/szpp_3776",
       "content-detail-link"
@@ -50,7 +50,7 @@ const cardData = [
   {
     icon: "fa-compact-disc",
     frontTitle: "ARTIST",
-    backTitle: `${addLink(
+    backTitle: `${wrapTextWithLink(
       "ヨルシカ",
       "yorushika.com/",
       "small-content-title"
@@ -62,7 +62,7 @@ const cardData = [
   {
     icon: "fa-robot",
     frontTitle: "ANIMATION",
-    backTitle: `${addLink(
+    backTitle: `${wrapTextWithLink(
       "EVANGELION",
       "https://www.evangelion.co.jp/",
       "small-content-title"
@@ -75,7 +75,7 @@ const cardData = [
   {
     icon: "fa-landmark",
     frontTitle: "AMUSEMENT PARK",
-    backTitle: `${addLink(
+    backTitle: `${wrapTextWithLink(
       "ディズニーランド",
       "https://www.disney.co.jp/",
       "small-content-title"
