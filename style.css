@@ -30,6 +30,7 @@ header {
   height: 70px;
   background-color: rgba(133, 130, 130, 0.425);
   position: fixed;
+  z-index: 9;
 }
 
 .header-center {
