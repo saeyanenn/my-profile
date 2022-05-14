@@ -140,6 +140,7 @@ main {
   color: rgb(35, 105, 167);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .fa {
