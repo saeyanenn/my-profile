@@ -43,11 +43,11 @@ $(function () {
   });
   const windowSize = $(window).width();
   if (windowSize > 1000) {
-    addMarginTopToFooter(3.3);
+    addMarginTopToFooter(0.3);
   } else if (windowSize > 670) {
-    addMarginTopToFooter(4.5);
+    addMarginTopToFooter(0.2);
   } else {
-    addMarginTopToFooter(8.5);
+    addMarginTopToFooter(0.2);
   }
   $(".contents-box").on("click", function () {
     $(this).toggleClass("flipped");
