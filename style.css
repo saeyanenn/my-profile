@@ -189,7 +189,7 @@ footer {
   height: 70px;
 }
 
-.last-commit-date {
+#last-commit-date {
   line-height: 70px;
   float: right;
 }
