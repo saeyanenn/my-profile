@@ -23,13 +23,13 @@ function checkSchoolYear() {
   const junior = new Date("2025/4/1");
 
   if (today < freshman) {
-    return (checkSchoolYear = "一");
+    return "一";
   } else if (today < sophomore) {
-    return (checkSchoolYear = "二");
+    return "二";
   } else if (today < junior) {
-    return (checkSchoolYear = "三");
+    return "三";
   } else {
-    return (checkSchoolYear = "四");
+    return "四";
   }
 }
 
@@ -70,5 +70,5 @@ $(function () {
     $(this).toggleClass("flipped");
   });
 
-  $("#schoolYear").text(checkSchoolYear());
+  $("#school-year").text(checkSchoolYear());
 });
