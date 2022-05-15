@@ -61,8 +61,6 @@ $(function () {
   const windowSize = $(window).width();
   if (windowSize > 1000) {
     addMarginTopToFooter(0.3);
-  } else if (windowSize > 670) {
-    addMarginTopToFooter(0.2);
   } else {
     addMarginTopToFooter(0.2);
   }
