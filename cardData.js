@@ -1,4 +1,4 @@
-function wrapTextWithLink(text, url, className) {
+function wrapTextWithLink(text, url, className = "small-content-title") {
   return `<a href="https://${url}" class="${className}" target="_blank">${text}</a>`;
 }
 
@@ -50,11 +50,7 @@ const cardData = [
   {
     icon: "fa-compact-disc",
     frontTitle: "ARTIST",
-    backTitle: `${wrapTextWithLink(
-      "ヨルシカ",
-      "yorushika.com/",
-      "small-content-title"
-    )}`,
+    backTitle: `${wrapTextWithLink("ヨルシカ", "yorushika.com/")}`,
     content: `n-bunaさんの心に響く歌詞や曲調と、
         suisさんの透き通った歌声が大好きです。<br />
         いつかライブに行ってみたいです。<br />`,
@@ -62,11 +58,7 @@ const cardData = [
   {
     icon: "fa-robot",
     frontTitle: "ANIMATION",
-    backTitle: `${wrapTextWithLink(
-      "EVANGELION",
-      "www.evangelion.co.jp/",
-      "small-content-title"
-    )}`,
+    backTitle: `${wrapTextWithLink("EVANGELION", "www.evangelion.co.jp/")}`,
     content: `庵野監督の精神描写とキャラクターの個性、
         世界観やハッと気付かされる伏線が大好きです。<br />
         旧アニメ版、漫画版、新劇場版それぞれに違いがあり、
@@ -75,11 +67,7 @@ const cardData = [
   {
     icon: "fa-landmark",
     frontTitle: "AMUSEMENT PARK",
-    backTitle: `${wrapTextWithLink(
-      "ディズニーランド",
-      "www.disney.co.jp/",
-      "small-content-title"
-    )}`,
+    backTitle: `${wrapTextWithLink("ディズニーランド", "www.disney.co.jp/")}`,
     content: `小さい頃に何度か連れてってもらって、大好きになりました。<br />
         乗り物が好きというよりも、世界観が好きで、ずっと歩いていたいです。<br />
         家族としか行ったことがないので、友達といったり、一人で行ってみたりしたいです。一人で行ってみたりしたいです。<br />`,
