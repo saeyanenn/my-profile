@@ -4,6 +4,7 @@ function wrapTextWithLink(text, url, className = "small-content-title") {
 
 const cardData = [
   {
+    id: "flip-board-1",
     icon: "fa-basketball",
     frontTitle: "SPORT",
     backTitle: "バスケットボール",
@@ -11,6 +12,7 @@ const cardData = [
       "小学生の頃から高校生までずっとやってきました。<br />あまり才能があるとは言えませんでしたが、楽しさと悔しさを糧に続けてきました。<br />",
   },
   {
+    id: "flip-board-2",
     icon: "fa-computer",
     frontTitle: "TECH",
     backTitle: "プログラミング",
@@ -23,6 +25,7 @@ const cardData = [
     に入り、 より技術を磨いていきます。`,
   },
   {
+    id: "flip-board-3",
     icon: "fa-dog",
     frontTitle: "ANIMAL",
     backTitle: "犬",
@@ -31,6 +34,7 @@ const cardData = [
         シベリアンハスキーの毛並みと顔が好きで、モフモフしたいです。<br />`,
   },
   {
+    id: "flip-board-4",
     icon: "fa-book-open",
     frontTitle: "SUBJECT",
     backTitle: "英語",
@@ -39,6 +43,7 @@ const cardData = [
         ただ、まだネイティブとの会話の経験がないので、まだまだ課題は多いです。<br />`,
   },
   {
+    id: "flip-board-5",
     icon: "fa-burger",
     frontTitle: "FOOD",
     backTitle: "アボカド",
@@ -48,6 +53,7 @@ const cardData = [
         価格が高騰していて、あまり食べれていません。`,
   },
   {
+    id: "flip-board-6",
     icon: "fa-compact-disc",
     frontTitle: "ARTIST",
     backTitle: `${wrapTextWithLink("ヨルシカ", "yorushika.com/")}`,
@@ -56,6 +62,7 @@ const cardData = [
         いつかライブに行ってみたいです。<br />`,
   },
   {
+    id: "flip-board-7",
     icon: "fa-robot",
     frontTitle: "ANIMATION",
     backTitle: `${wrapTextWithLink("EVANGELION", "www.evangelion.co.jp/")}`,
@@ -65,6 +72,7 @@ const cardData = [
         個人的には新劇場版のQが一番好きです。`,
   },
   {
+    id: "flip-board-8",
     icon: "fa-landmark",
     frontTitle: "AMUSEMENT PARK",
     backTitle: `${wrapTextWithLink("ディズニーランド", "www.disney.co.jp/")}`,
