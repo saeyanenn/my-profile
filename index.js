@@ -36,7 +36,7 @@ function checkSchoolYear() {
 function createCardElement(data) {
   return `
   <div class="contents-box" id="${data.id}">
-    <div class="contents-flame front text-align-center">
+    <div class="contents-flame front text-align-center" id="${data.id}">
       <div class="icon">
         <i class="fa fa-solid ${data.icon}"></i>
       </div>
@@ -45,7 +45,7 @@ function createCardElement(data) {
     </div>
   </div>
 
-  <div class="contents-flame back text-align-center">
+  <div class="contents-flame back text-align-center" id="${data.id}">
     <p class="small-content-title">${data.backTitle}</p>
     <p class="content-detail">
       ${data.content}
