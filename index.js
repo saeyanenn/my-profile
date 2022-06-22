@@ -34,6 +34,7 @@ function checkSchoolYear() {
 }
 
 function createCardElement(data) {
+  //キャッシュ遅いですよ
   return `
   <div class="contents-box" id="${data.id}">
     <div class="contents-flame front text-align-center" id="${data.id}">
